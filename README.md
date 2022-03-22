@@ -22,17 +22,18 @@ kinectSDK1.4.1
 
 这里我建议安装到C盘，会直接出现在根目录下
 
-![image-20210715174751989](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image1.jpg)![image-20210715174800734](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715174800734.png)
+![image-20210715174751989](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image1.jpg)
+![image-20210715174800734](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image2.jpg)
 
 SDK目录下是一些头文件
 
 tools目录下则是工具，总共有三种
 
-![image-20210715174920587](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715174920587.png)
+![image-20210715174920587](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image3.jpg)
 
 Kinect查看器可以启动相机，或者打开已经录制好的视频。并且展示KinectDk的三种模式，RGB模式，红外模式，深度模式。
 
-![image-20210715175326901](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715175326901.png)
+![image-20210715175326901](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image4.jpg)
 
 录制器
 
@@ -50,7 +51,7 @@ https://docs.microsoft.com/zh-cn/azure/kinect-dk/azure-kinect-recorder
 
 2、连接电源
 
-![完整设备功能](https://docs.microsoft.com/zh-cn/azure/kinect-dk/media/quickstarts/full-device-features.png)
+![完整设备功能](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image5.jpg)
 
 在图片中，type-c接口的线是数据接口，要连接到电脑上，要求USB3.0（如果连接不良可以检查一下是否是使用了拓展坞，尝试使用电脑自带的USB3.0接口）
 
@@ -60,17 +61,17 @@ https://docs.microsoft.com/zh-cn/azure/kinect-dk/azure-kinect-recorder
 
 1、新建空白C++控制台工程并添加源文件Main.cpp
 
-![在这里插入图片描述](20210527170847959.png)
+![在这里插入图片描述](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image6.jpg)
 
 2、安装 Azure Kinect NuGet 包
 
 右键 引用 - 管理NuGet程序包
 
-![在这里插入图片描述](20210527172718714.png)
+![在这里插入图片描述](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image7.jpg)
 
 3、搜索Microsoft.Azure.Kinect.Sensor，从列表中选择该包并安装。
 
-![在这里插入图片描述](20210527173031683.png)
+![在这里插入图片描述](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image8.jpg)
 
 4、搜索cv
 
@@ -85,11 +86,11 @@ https://docs.microsoft.com/zh-cn/azure/kinect-dk/azure-kinect-recorder
 右键自己的项目，选择属性，上方的平台选择 x64
 
 - C/C++ - 常规 - 附加包含目录，加入SDK的include路径
-  ![在这里插入图片描述](20210527192831802.png)
+  ![在这里插入图片描述](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image9.jpg)
 - 链接器 - 常规 - 附加库目录，加入SDK的lib路径
-  ![在这里插入图片描述](20210527192951737.png)
+  ![在这里插入图片描述](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image10.jpg)
 - 链接器 - 输入 - 附加依赖项，加入k4a.lib
-  ![在这里插入图片描述](20210527193046803.png)
+  ![在这里插入图片描述](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image11.jpg)
   **注意：每添加一项后，点击右下角应用。**
 
 ### 项目运行
@@ -98,11 +99,11 @@ https://docs.microsoft.com/zh-cn/azure/kinect-dk/azure-kinect-recorder
 
 在VS项目目录下新建三个文件夹——rgb、depth、ir，输出的图片会存储到这里。
 
-![image-20210716150838286](image-20210716150838286.png)
+![image-20210716150838286](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image12.jpg)
 
  运行时点击本地Windows调试器即可。
 
-![image-20210716150925392](image-20210716150925392.png)
+![image-20210716150925392](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image13.jpg)
 
 ### 相机内参获取
 
