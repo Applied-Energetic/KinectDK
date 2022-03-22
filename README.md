@@ -18,11 +18,11 @@ kinectSDK1.4.1
 
 [1]: https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md	"SDK下载"
 
-![image-20210715174541732](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715174541732.png)
+![image-20210715174541732](https://github.com/Applied-Energetic/KinectDK/blob/main/image/sdk.jpg)
 
 这里我建议安装到C盘，会直接出现在根目录下
 
-![image-20210715174751989](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715174751989.png)![image-20210715174800734](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715174800734.png)
+![image-20210715174751989](https://github.com/Applied-Energetic/KinectDK/blob/main/image/image1.jpg)![image-20210715174800734](C:\Users\Applied_Energetic\AppData\Roaming\Typora\typora-user-images\image-20210715174800734.png)
 
 SDK目录下是一些头文件
 
